@@ -1,4 +1,4 @@
-<h1 align="center">Listing All Categories</h1>
+<h1 align="center">Todos los proyectos</h1>
 
 <div align="center">
   <%= will_paginate %>
@@ -9,7 +9,6 @@
         <li class="article-title">
           <%= link_to "#{category.name}", category_path(category) %>
         </li>
-        <li><small><%= pluralize(category.articles.count, "article") %></small></li>
       </div>
     </div>
   </ul>

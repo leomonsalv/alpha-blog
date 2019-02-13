@@ -6,16 +6,16 @@
       <%= f.label :name %>
     </div>
     <div class="col-sm-8">
-      <%= f.text_field :name, class: "form-control", placeholder: "Category name", autofocus: true %>
+      <%= f.text_field :name, class: "form-control", placeholder: "Nombre del proyecto", autofocus: true %>
     </div>
   </div>
   
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <%= f.submit class: 'btn btn-primary btn-lg' %>
+      <%= f.submit "Procesar", class: 'btn btn-primary btn-lg' %>
     </div>
   </div>
 <% end %>
 
 <div class="col-xs-4 col-xs-offset-4">
-  [ <%= link_to "Cancel request and return to articles listing", articles_path %> ]
+  [ <%= link_to "Cancelar petición", articles_path %> ]
